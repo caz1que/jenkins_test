@@ -13,7 +13,7 @@ pipeline {
           steps {
               echo "==== docker build ===="
               dir ('docker') {
-                sh 'docker build . '
+                sh 'docker build -t salamulya/jenkins_test:latest . '
               }
           }
       }
